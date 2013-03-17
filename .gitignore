@@ -1,0 +1,8 @@
+.savehist
+.saveplace
+*.elc
+custom.el
+*~
+elpa/
+.*.desktop
+.*.desktop.lock
