@@ -3,7 +3,6 @@
 (global-set-key "\C-Z" 'undo)
 
 (global-set-key [f11] 'toggle-frame-fullscreen)
-
 (global-set-key [(mouse-3)] 'mouse-major-mode-menu)
 
 (provide 'bindings )

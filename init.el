@@ -11,7 +11,7 @@
 
 ;;(require 'defuns)
 (require 'settings)
-(require 'visual)
+(require 'font)
 (require 'bindings)
 (require 'session)
 (require 'editing)
