@@ -25,13 +25,15 @@
 ;;TODO
 ;; autoinsert
 ;; progmodes
-;;    c/c++, go, python, java, haskell, prolog
+;;    c/c++, go, python, java, haskell, prolog, elisp
 ;;    gdb
 ;;    avr/pic/msp430
+;; context help
 ;; autocomplete
+;; yasnippet
 ;; org-mode
 ;; ediff
 ;; git
-;; erc, twitter
+;; erc, twitter, jabber
 ;; cedet
 ;; TeX
