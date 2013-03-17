@@ -8,16 +8,18 @@
 (if (file-exists-p custom-file)
     (load custom-file))
 
-
 ;;(require 'defuns)
 (require 'settings)
 (require 'font)
+(require 'theme)
 (require 'bindings)
 (require 'session)
-(require 'editing)
-(require 'theme)
+
+
 ;;(require 'packages)
 ;;(require 'modes)
+
+;; doc mode
 
 ;;(unless (server-running-p)
 ;;  (server-start))

@@ -122,8 +122,6 @@
 ;; resize-mini-windows nil)
 
 
-
-
 ;; tramp ( Transparent Remote Access Mode )
 (setq tramp-default-method "ssh")
 
@@ -138,6 +136,15 @@
 
 ;; Tab either indents or complete
 (setq tab-always-indent 'complete)
+
+;; Indentation
+(setq standard-indent 2)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+
+;; Trailing whitespace
+(setq show-trailing-whitespace t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (setq compilation-read-command nil)
 (setq compilation-ask-about-save nil)
