@@ -8,6 +8,8 @@
 (setq scroll-conservatively 50)
 (setq scroll-margin 3)
 
+;; Do not backup files
+(setq make-backup-files nil)
 
 ;; autodetect file encoding
 ;; (prefer-coding-system 'cp866)
@@ -33,13 +35,11 @@
 ;; Use y/n instead of yes/no for questions
 (defalias 'yes-or-no-p 'y-or-n-p)
 
-
 ;; Highlight matches during query replacement
 (setq query-replace-highlight t)
 
 ;; Highlight current search match
 (setq search-highlight t)
-
 
 ;; Indicate column number on status bar
 (setq column-number-mode t)
@@ -72,13 +72,11 @@
 ;; Small fringes
 (set-fringe-mode '(1 . 1))
 
-
 ;; text mode defaults
 (setq default-major-mode 'text-mode)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 (setq auto-fill-mode t)
 (setq fill-column 80)
-
 
 ;; uniquify
 (require 'uniquify)
@@ -110,10 +108,6 @@
       (interactive)
       (iswitchb-make-buflist iswitchb-default)
       (setq iswitchb-rescan t))
-
-
-
-
 
 ;; Minibuffer
 ;;(setq enable-recursive-minibuffers nil ;;  allow mb cmds in the mb
@@ -148,8 +142,5 @@
 
 (setq compilation-read-command nil)
 (setq compilation-ask-about-save nil)
-
-
-
 
 (provide 'settings)

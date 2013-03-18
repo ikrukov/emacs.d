@@ -14,12 +14,14 @@
 (require 'theme)
 (require 'bindings)
 (require 'session)
-
-
+(require 'spelling)
+;;(require 'mode-line-conf)
 ;;(require 'packages)
 ;;(require 'modes)
 
 ;; doc mode
+;; autodetect file encoding
+;; find-file-literally
 
 ;;(unless (server-running-p)
 ;;  (server-start))
