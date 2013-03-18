@@ -8,22 +8,29 @@
 (if (file-exists-p custom-file)
     (load custom-file))
 
+(require 'theme)
+(require 'font)
 ;;(require 'defuns)
 (require 'settings)
-(require 'font)
-(require 'theme)
-(require 'indentation)
 (require 'bindings)
 (require 'session)
 (require 'spelling)
+(require 'indentation)
+(require 'c-prog-mode)
+
 ;;(require 'mode-line-conf)
 ;;(require 'packages)
 ;;(require 'modes)
+
 
 ;; doc mode
 ;; autodetect file encoding
 ;; find-file-literally
 ;; whitespace-mode - show spaces
+;; ielm http://emacs-fu.blogspot.ru/2011/03/ielm-repl-for-emacs.html
+
+;; follow-mode
+;; window/frame resize?
 
 ;;(unless (server-running-p)
 ;;  (server-start))
@@ -43,3 +50,4 @@
 ;; erc, twitter, jabber
 ;; cedet
 ;; TeX
+;;http://emacs-fu.blogspot.ru/2009/11/showing-pop-ups.html

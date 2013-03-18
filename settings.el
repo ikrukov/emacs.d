@@ -70,7 +70,7 @@
 (global-hl-line-mode t)
 
 ;; Small fringes
-(set-fringe-mode '(1 . 1))
+(set-fringe-mode '(5 . 5))
 
 ;; text mode defaults
 (setq default-major-mode 'text-mode)
@@ -92,8 +92,10 @@
 
 ;; ISwitchBuffers
  (iswitchb-mode 1)
-  (setq iswitchb-buffer-ignore '("^ " "*Buffer"))
-  (setq iswitchb-default-method 'samewindow)
+(setq iswitchb-buffer-ignore '("^ " "*Buffer"))
+(add-to-list 'iswitchb-buffer-ignore "*Messages*")
+(add-to-list 'iswitchb-buffer-ignore "*Backtrace")
+(setq iswitchb-default-method 'samewindow)
 
 ;; for isb + uniquify
     (defadvice iswitchb-kill-buffer (after rescan-after-kill activate)
