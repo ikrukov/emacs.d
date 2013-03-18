@@ -12,6 +12,7 @@
 (require 'settings)
 (require 'font)
 (require 'theme)
+(require 'indentation)
 (require 'bindings)
 (require 'session)
 (require 'spelling)
@@ -22,6 +23,7 @@
 ;; doc mode
 ;; autodetect file encoding
 ;; find-file-literally
+;; whitespace-mode - show spaces
 
 ;;(unless (server-running-p)
 ;;  (server-start))
