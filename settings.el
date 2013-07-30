@@ -54,6 +54,11 @@
 ;; Show buffer size
 (setq size-indication-mode t)
 
+;; Display time in modeline
+;;(setq display-time-day-and-date t)
+(setq  display-time-24hr-format t)
+(display-time)
+
 ;; Misc indicators
 (setq-default indicate-empty-lines t)
 (setq-default indicate-buffer-boundaries t)
@@ -122,7 +127,7 @@
 (setq tramp-default-method "ssh")
 
 ;; Adds a new line at the last line
-(setq require-final-newline t)
+;;(setq require-final-newline t)
 
 ;; Tags filename
 (setq tags-file-name "TAGS")
@@ -133,14 +138,9 @@
 ;; Tab either indents or complete
 (setq tab-always-indent 'complete)
 
-;; Indentation
-(setq standard-indent 2)
-(setq-default tab-width 4)
-(setq-default indent-tabs-mode nil)
-
 ;; Trailing whitespace
 (setq show-trailing-whitespace t)
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;;(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (setq compilation-read-command nil)
 (setq compilation-ask-about-save nil)

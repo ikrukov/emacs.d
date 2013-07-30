@@ -17,6 +17,8 @@
 (require 'spelling)
 (require 'indentation)
 (require 'c-prog-mode)
+(require 'melpa-init)
+(require 'haskell-settings)
 
 ;;(require 'mode-line-conf)
 ;;(require 'packages)
@@ -40,7 +42,7 @@
 ;; progmodes
 ;;    c/c++, go, python, java, haskell, prolog, elisp
 ;;    gdb
-;;    avr/pic/msp430
+;;    avr/pic/msp430/vhdl
 ;; context help
 ;; autocomplete
 ;; yasnippet
@@ -50,4 +52,5 @@
 ;; erc, twitter, jabber
 ;; cedet
 ;; TeX
+;; Orgmode
 ;;http://emacs-fu.blogspot.ru/2009/11/showing-pop-ups.html
