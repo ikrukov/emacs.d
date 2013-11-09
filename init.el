@@ -19,6 +19,7 @@
 (require 'c-prog-mode)
 (require 'melpa-init)
 (require 'haskell-settings)
+(require 'octave-settings)
 
 ;;(require 'mode-line-conf)
 ;;(require 'packages)
