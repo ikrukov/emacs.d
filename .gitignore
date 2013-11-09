@@ -6,3 +6,5 @@ custom.el
 elpa/
 .*.desktop
 .*.desktop.lock
+[#]*[#]
+.\#*
