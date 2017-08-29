@@ -1,7 +1,9 @@
 .savehist
 .saveplace
 *.elc
+*.dat
 custom.el
+session.*
 *~
 elpa/
 .*.desktop
