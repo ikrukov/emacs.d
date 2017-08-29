@@ -145,4 +145,7 @@
 (setq compilation-read-command nil)
 (setq compilation-ask-about-save nil)
 
+;; for waf build system
+(setq auto-mode-alist (cons '("wscript" . python-mode) auto-mode-alist))
+
 (provide 'settings)

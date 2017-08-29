@@ -1,7 +1,7 @@
  ;; -*- mode: Lisp; fill-column: 75; comment-column: 50; -*-
 ;; Local Variables
 
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/settings")
 
 ;; Custom settings
 (setq custom-file "~/.emacs.d/custom.el")
@@ -18,8 +18,14 @@
 (require 'indentation)
 (require 'c-prog-mode)
 (require 'melpa-init)
-(require 'haskell-settings)
-(require 'octave-settings)
+(require 'go-lang )
+
+;;(require 'haskell-settings)
+;;(require 'slime-settings)
+
+;;(require 'octave-settings)
+;;(require 'magit-settings)
+(require 'speedbar-settings)
 
 ;;(require 'mode-line-conf)
 ;;(require 'packages)
@@ -55,3 +61,6 @@
 ;; TeX
 ;; Orgmode
 ;;http://emacs-fu.blogspot.ru/2009/11/showing-pop-ups.html
+
+(load-file (let ((coding-system-for-read 'utf-8))
+                (shell-command-to-string "agda-mode locate")))
