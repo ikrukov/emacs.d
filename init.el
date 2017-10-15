@@ -20,6 +20,8 @@
 (require 'melpa-init)
 (require 'go-lang )
 
+(load-file "~/.emacs.d/cubicaltt.el")
+
 ;;(require 'haskell-settings)
 ;;(require 'slime-settings)
 
@@ -61,6 +63,11 @@
 ;; TeX
 ;; Orgmode
 ;;http://emacs-fu.blogspot.ru/2009/11/showing-pop-ups.html
+
+
+;; Proof-general
+ (require 'proof-site "~/.emacs.d/lisp/PG/generic/proof-site")
+
 
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
