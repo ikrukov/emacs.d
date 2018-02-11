@@ -22,7 +22,7 @@
 
 (load-file "~/.emacs.d/cubicaltt.el")
 
-;;(require 'haskell-settings)
+(require 'haskell-settings)
 ;;(require 'slime-settings)
 
 ;;(require 'octave-settings)
