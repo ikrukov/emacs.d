@@ -1,6 +1,13 @@
  ;; -*- mode: Lisp; fill-column: 75; comment-column: 50; -*-
 ;; Local Variables
 
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.d/settings")
 
 ;; Custom settings
@@ -17,10 +24,11 @@
 (require 'spelling)
 (require 'indentation)
 (require 'c-prog-mode)
+(require 'let-alist)
 (require 'melpa-init)
 (require 'go-lang )
 
-(load-file "~/.emacs.d/cubicaltt.el")
+;;(load-file "~/.emacs.d/cubicaltt.el")
 
 (require 'haskell-settings)
 ;;(require 'slime-settings)

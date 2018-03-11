@@ -69,4 +69,8 @@
 ;;(define-key haskell-mode-map (kbd "M-.") 'haskell-mode-tag-find)
 ;; ;;(define-key haskell-mode-map (kbd "M-.") 'haskell-mode-jump-to-def-or-tag)
 
+;; Install Intero
+;;(package-install 'intero)
+(add-hook 'haskell-mode-hook 'intero-mode)
+(intero-global-mode 1)
 (provide 'haskell-settings)
