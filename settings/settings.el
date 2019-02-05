@@ -11,13 +11,6 @@
 ;; Do not backup files
 (setq make-backup-files nil)
 
-;; autodetect file encoding
-;; (prefer-coding-system 'cp866)
-;; (prefer-coding-system 'koi8-r-unix)
-;; (prefer-coding-system 'windows-1251-dos)
-;; (prefer-coding-system 'utf-8-unix)
-
-
 ;; Hide unnecessary UI
 (when (display-graphic-p)
   ;; Hide toolbar, menu and scrollbars
@@ -83,44 +76,44 @@
 (setq auto-fill-mode t)
 (setq fill-column 80)
 
-;; uniquify
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'reverse)
-(setq uniquify-separator "/")
-(setq uniquify-after-kill-buffer-p t)
-(setq uniquify-ignore-buffers-re "^\\*")
-(setq post-forward-angle-brackets 'post-forward-angle-brackets)
+;; ;; uniquify
+;; (require 'uniquify)
+;; (setq uniquify-buffer-name-style 'reverse)
+;; (setq uniquify-separator "/")
+;; (setq uniquify-after-kill-buffer-p t)
+;; (setq uniquify-ignore-buffers-re "^\\*")
+;; (setq post-forward-angle-brackets 'post-forward-angle-brackets)
 
 ;; ido
 (require 'ido)
 (ido-mode t )
 
-;; ISwitchBuffers
- (iswitchb-mode 1)
-(setq iswitchb-buffer-ignore '("^ " "*Buffer"))
-(add-to-list 'iswitchb-buffer-ignore "*Messages*")
-(add-to-list 'iswitchb-buffer-ignore "*Backtrace")
-(setq iswitchb-default-method 'samewindow)
+;; ;; ISwitchBuffers
+;;  (iswitchb-mode 1)
+;; (setq iswitchb-buffer-ignore '("^ " "*Buffer"))
+;; (add-to-list 'iswitchb-buffer-ignore "*Messages*")
+;; (add-to-list 'iswitchb-buffer-ignore "*Backtrace")
+;; (setq iswitchb-default-method 'samewindow)
 
-;; for isb + uniquify
-    (defadvice iswitchb-kill-buffer (after rescan-after-kill activate)
-      "*Regenerate the list of matching buffer names after a kill.
-    Necessary if using `uniquify' with `uniquify-after-kill-buffer-p'
-    set to non-nil."
-      (setq iswitchb-buflist iswitchb-matches)
-      (iswitchb-rescan))
+;; ;; for isb + uniquify
+;;     (defadvice iswitchb-kill-buffer (after rescan-after-kill activate)
+;;       "*Regenerate the list of matching buffer names after a kill.
+;;     Necessary if using `uniquify' with `uniquify-after-kill-buffer-p'
+;;     set to non-nil."
+;;       (setq iswitchb-buflist iswitchb-matches)
+;;       (iswitchb-rescan))
 
-    (defun iswitchb-rescan ()
-      "*Regenerate the list of matching buffer names."
-      (interactive)
-      (iswitchb-make-buflist iswitchb-default)
-      (setq iswitchb-rescan t))
+;;     (defun iswitchb-rescan ()
+;;       "*Regenerate the list of matching buffer names."
+;;       (interactive)
+;;       (iswitchb-make-buflist iswitchb-default)
+;;       (setq iswitchb-rescan t))
 
-;; Minibuffer
-;;(setq enable-recursive-minibuffers nil ;;  allow mb cmds in the mb
-;;      max-mini-window-height .25       ;;  max 2 lines
-;; minibuffer-scroll-window nil
-;; resize-mini-windows nil)
+Minibuffer
+(setq enable-recursive-minibuffers nil ;;  allow mb cmds in the mb
+     max-mini-window-height .25       ;;  max 2 lines
+minibuffer-scroll-window nil
+resize-mini-windows nil)
 
 
 ;; tramp ( Transparent Remote Access Mode )
